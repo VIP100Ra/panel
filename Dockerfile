@@ -1,6 +1,5 @@
 FROM pasarguard/panel:latest
 
-# openssl برای ساخت خودکار گواهی SSL لازمه (بدونش پنل فقط روی localhost بایند میشه)
 RUN apt-get update && apt-get install -y --no-install-recommends openssl \
     && rm -rf /var/lib/apt/lists/*
 
